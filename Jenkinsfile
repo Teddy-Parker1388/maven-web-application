@@ -24,7 +24,7 @@ node
  }
  
   /*
- stage("ExecuteSonarQubeReport")
+ stage("ExecuteSonarQubeReports")
  {
  sh "${mavenHome}/bin/mvn sonar:sonar"
  }

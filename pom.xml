@@ -95,13 +95,13 @@
 	     <repository>
               <id>nexus</id>
               <name>Tedd's Release Repository</name>
-              <url>http://34.205.78.43:8081/repository/my-release/</url>
+              <url>http://34.205.78.43:8081/repository/team17-release/</url>
             </repository>
 
             <snapshotRepository>
               <id>nexus</id>
               <name>Teddy's Snapshot Repository </name>
-              <url>http://34.205.78.43:8081/repository/my-snapshot/</url>
+              <url>http://34.205.78.43:8081/repository/team17-snapshot/</url>
             </snapshotRepository>
 
 	    

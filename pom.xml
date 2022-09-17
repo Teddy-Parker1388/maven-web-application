@@ -90,6 +90,7 @@
 		
 	</dependencies>
 	<distributionManagement>
+	<!--
 	     <repository>
               <id>nexus</id>
               <name>Tedd's Release Repository</name>
@@ -101,7 +102,7 @@
               <name>Teddy's Snapshot Repository </name>
               <url>http://34.205.78.43:8081/repository/team17-snapshot/</url>
             </snapshotRepository>
-
+         -->
 	    
 	</distributionManagement>
 	

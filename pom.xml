@@ -24,6 +24,8 @@
 		<log4j.version>1.2.17</log4j.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<sonar.host.url>http://ec2-18-212-51-76.compute-1.amazonaws.com:9000/</sonar.host.url>
+		<sonar.login>d0839053057d466073e6ff8d3340f765e058051b</sonar.login>
 	</properties>
 
 	<dependencies>
@@ -90,19 +92,19 @@
 		
 	</dependencies>
 	<distributionManagement>
-	<!--
+	
 	     <repository>
               <id>nexus</id>
               <name>Tedd's Release Repository</name>
-              <url>http://34.205.78.43:8081/repository/team17-release/</url>
+              <url>http://ec2-44-210-88-32.compute-1.amazonaws.com:8081/repository/jenkins-release//url>
             </repository>
 
             <snapshotRepository>
               <id>nexus</id>
               <name>Teddy's Snapshot Repository </name>
-              <url>http://34.205.78.43:8081/repository/team17-snapshot/</url>
+              <url>http://ec2-44-210-88-32.compute-1.amazonaws.com:8081/repository/jenkins-snap/</url>
             </snapshotRepository>
-         -->
+         
 	    
 	</distributionManagement>
 	

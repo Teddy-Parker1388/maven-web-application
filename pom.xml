@@ -139,7 +139,7 @@
 				<version>2.0</version>
 				<configuration>
 					<server>TomcatServer</server>
-					<url>http://18.212.50.154:7070/manager/text</url>
+					<url>http://18.212.50.154:7070/manager/text/</url>
 					<path>/jenkinsapp</path>
 				</configuration>
 				

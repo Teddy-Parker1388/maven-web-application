@@ -96,7 +96,7 @@
 	     <repository>
               <id>nexus</id>
               <name>Tedd's Release Repository</name>
-              <url>http://ec2-44-210-88-32.compute-1.amazonaws.com:8081/repository/jenkins-release//url>
+              <url>http://ec2-44-210-88-32.compute-1.amazonaws.com:8081/repository/jenkins-release/</url>
             </repository>
 
             <snapshotRepository>

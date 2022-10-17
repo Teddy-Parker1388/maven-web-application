@@ -131,6 +131,17 @@
 					</webApp>
 				</configuration>
 			</plugin>
+			<plugin>
+				<grouId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.0</version>
+				<configuration>
+					<server>TomcatServer</server>
+					<url>http://18.212.50.154:7070/manager/text</url>
+					<path>/jenkinsapp</path>
+				</configuration>
+				
+			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

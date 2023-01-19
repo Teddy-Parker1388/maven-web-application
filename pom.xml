@@ -93,18 +93,14 @@
 	</dependencies>
 	<distributionManagement>
 	
-	     <repository>
-              <id>nexus</id>
-              <name>Tedd's Release Repository</name>
-              <url>http://ec2-44-210-88-32.compute-1.amazonaws.com:8081/repository/jenkins-release/</url>
-            </repository>
-
-            <snapshotRepository>
-              <id>nexus</id>
-              <name>Teddy's Snapshot Repository </name>
-              <url>http://44.202.211.121:8081/repository/java-snapshot/</url>
-            </snapshotRepository>
-         
+	    <snapshotRepository>
+			<url>http://54.163.23.222:8081/repository/maven-snapshots/</url>
+				<id>nexus</id>
+		</snapshotRepository>
+		<repository>
+			<id>nexus</id>
+			<url>http://54.163.23.222:8081/repository/my-java-release/</url>
+				</repository>            
 	    
 	</distributionManagement>
 	

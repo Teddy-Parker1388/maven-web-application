@@ -5,13 +5,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>TedTech DevOps Program- Home Page</title>
-<link href="images/mylandmarklogo.png" rel="icon">
+<link href="images/tedtechlogo.jpg" rel="icon">
 </head>
 </head>
 <body>
 <h1 align="center">Welcome TedTech Technologies. Your destination for career progression and success.</h1>
 <h1 align="center">We are developing and supporting quality  Software Solutions to millions of clients.
-	           We are raising over 1m millionaires by 2030.
 	We offer  Training for DevOps with Linux and Cloud equipping IT Engineers for best performance.</h1>
 <hr>
 <br>
@@ -31,13 +30,13 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 <hr>
 <div style="text-align: center;">
 	<span>
-		<img src="images/mylandmarklogo.png" alt="" width="150">
+		<img src="images/tedtechlogo.jpg" alt="" width="150">
 	</span>
 	<span style="font-weight: bold;">
                 TedTech, 
 		Charlotte, North Carolina, United States
 		+1 336 405 7947,
-		mylandmarktech@gmail.com
+		tedtech@gmail.com
 		<br>
 		<a href="mailto:tedtech@gmail.com">Mail to TedTech</a>
 	</span>

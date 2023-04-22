@@ -4,12 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>LandmarkTechnologies- Home Page</title>
+<title>TedTech DevOps Program- Home Page</title>
 <link href="images/mylandmarklogo.png" rel="icon">
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to TEAM 17-MIRACLE GROUP. THE GROUP OF MILLIONS.</h1>
+<h1 align="center">Welcome TedTech Technologies. Your destination for career progression and success.</h1>
 <h1 align="center">We are developing and supporting quality  Software Solutions to millions of clients.
 	           We are raising over 1m millionaires by 2030.
 	We offer  Training for DevOps with Linux and Cloud equipping IT Engineers for best performance.</h1>
@@ -34,20 +34,20 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 		<img src="images/mylandmarklogo.png" alt="" width="150">
 	</span>
 	<span style="font-weight: bold;">
-                Landmark Technology, 
-		Toronto, Ontario, Canada
-		+1 437 215 2483,
+                TedTech, 
+		Charlotte, North Carolina, United States
+		+1 336 405 7947,
 		mylandmarktech@gmail.com
 		<br>
-		<a href="mailto:mylandmarktech@gmail.com">Mail to Landmark Technologies</a>
+		<a href="mailto:tedtech@gmail.com">Mail to TedTech</a>
 	</span>
 </div>
 <hr>
 	<p> Service : <a href="services/employee/getEmployeeDetails">Get Employee Details </p>
 <hr>
 <hr>
-<p align=center>Landmark Technologies - Consultant, Training and Software Development</p>
-<p align=center><small>Copyrights 2021 by <a href="http://mylandmarktech.com/">Landmark Technologies</a> </small></p>
+<p align=center>Ted Tech - Consultant, Training and Software Development</p>
+<p align=center><small>Copyrights 2021 by <a href="http://tedtech.com/">TedTech</a> </small></p>
 
 </body>
 </html>

@@ -22,8 +22,8 @@ public class EmployeeService {
 			throws JSONException {
 
 		JSONObject js = new JSONObject();
-		js.put("Name", "Landmark Technologies");
-		js.put("Calling Name", "Landmark");
+		js.put("Name", "Ted Tech");
+		js.put("Calling Name", "DevOps");
 		js.put("DOB", "08-Nov-2011");
 		js.put("Hobbies", "Reading Technical Blogs,Teaching, Changing lives..");
 		js.put("Places he like", "Africa, Church, His native place");

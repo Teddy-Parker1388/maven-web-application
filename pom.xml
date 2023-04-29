@@ -93,12 +93,12 @@
 	<distributionManagement>
 	
 	    <snapshotRepository>
-			<url>http://54.163.23.222:8081/repository/maven-snapshots/</url>
+			<url>http://3.92.209.69:8081/repository/maven-snapshots/</url>
 				<id>nexus</id>
 		</snapshotRepository>
 		<repository>
 			<id>nexus</id>
-			<url>http://54.163.23.222:8081/repository/my-java-release/</url>
+			<url>http://3.92.209.69:8081/repository/maven-releases/</url>
 				</repository>            
 	    
 	</distributionManagement>

@@ -10,7 +10,7 @@ node {
   stage('3-CodeQuality') {
      sh "${mavenHome}/bin/mvn sonar:sonar"
   }
-  stage('4-UploadArticats') {
+  stage('UploadArticats') {
     sh "${mavenHome}/bin/mvn deploy"
   }
  

@@ -93,12 +93,12 @@
 	<distributionManagement>
 	
 	    <snapshotRepository>
-			<url>http://3.92.209.69:8081/repository/java-snapshot/</url>
+			<url>http://52.90.186.175:8081/repository/java-snapshot/</url>
 				<id>nexus</id>
 		</snapshotRepository>
 		<repository>
 			<id>nexus</id>
-			<url>http://3.92.209.69:8081/repository/java-release/</url>
+			<url>http://52.90.186.175:8081/repository/java-release/</url>
 				</repository>            
 	    
 	</distributionManagement>

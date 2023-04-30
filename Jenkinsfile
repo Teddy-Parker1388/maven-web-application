@@ -8,18 +8,7 @@ pipeline {
     
     stages{
         
-        stage("Git Checkout"){
-            
-            steps{
-                
-                echo "Performing git checkout"
-                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Teddy-Parker1388/maven-web-application']])
-                
-                
-            }
-  
-        }
-        
+ 
         stage("Build Artifact") {
             
             steps{

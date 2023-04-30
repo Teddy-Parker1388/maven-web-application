@@ -1,54 +1,63 @@
-node
- {
+pipeline {
+    agent any
+    
+    tools {
+        maven "Maven3"
+      
+    } 
+    
+    stages{
+        
+        stage("Git Checkout"){
+            
+            steps{
+                
+                echo "Performing git checkout"
+                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Teddy-Parker1388/maven-web-application']])
+                
+                
+            }
   
-  def mavenHome = tool name: "maven3.6.2"
-  
-      echo "GitHubs BranhName ${env.BRANCH_NAME}"
-      echo "Jenkinss Job Number ${env.BUILD_NUMBER}"
-      echo "Jenkins Node Name ${env.NODE_NAME}"
-  
-      echo "Jenkins Home ${env.JENKINS_HOME}"
-      echo "Jenkins URL ${env.JENKINS_URL}"
-      echo "JOB Names ${env.JOB_NAME}"
-  
-   properties([[$class: 'JiraProjectProperty'], buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '2', daysToKeepStr: '', numToKeepStr: '2')), pipelineTriggers([pollSCM('* * * * *')])])
-  
-  stage("CheckOutCodeGitss")
-  {
-   git branch: 'development', credentialsId: '65fb834f-a83b-4fe7-8e11-686245c47a65', url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'
- }
- 
- stage("Build")
- {
- sh "${mavenHome}/bin/mvn clean package"
- }
- 
-  /*
- stage("ExecuteSonarQubeReports")
- {
- sh "${mavenHome}/bin/mvn sonar:sonar"
- }
- 
- stage("UploadArtifactsintoNexusRepo")
- {
- sh "${mavenHome}/bin/mvn deploy"
- }
- 
-  stage("DeployAppTomcat")
- {
-  sshagent(['423b5b58-c0a3-42aa-af6e-f0affe1bad0c']) {
-    sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war  ec2-user@15.206.91.239:/opt/apache-tomcat-9.0.34/webapps/" 
-  }
- }
- 
- stage('EmailNotification')
- {
- mail bcc: 'mylandmarktech@gmail.com', body: '''Build is over
+        }
+        
+        stage("Build Artifact") {
+            
+            steps{
+                sh 'mvn package'
+                
+            }
+        }
+        
+        stage("Code Quality Check"){
+            steps{
+                withSonarQubeEnv("Sonarqube") {
+                    
+                    sh 'mvn sonar:sonar'
+                 }
+            }
+        }
+        
+        stage("Upload to Nexus"){
+            
+            steps{
+                sh 'mvn deploy'
+                
+            }
+        }
+        
+        stage("Deplo to Dev Server") {
+            steps{
+                deploy adapters: [tomcat9(credentialsId: '741618f4-b2ed-4676-9b57-9e103703b0ba', path: '', url: 'http://54.91.94.135:8080/')], contextPath: null, war: '**/*.war'
+                
+            }
+            
+            
+        }
+             
+        
+        
+    }
 
- Thanks,
- Landmark Technologies,
- +14372152483.''', cc: 'mylandmarktech@gmail.com', from: '', replyTo: '', subject: 'Build is over!!', to: 'mylandmarktech@gmail.com'
- }
- */
- 
- }
+    
+    
+}

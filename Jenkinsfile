@@ -10,7 +10,9 @@ pipeline {
         
  
         stage("Build Artifact") {
-            
+            agent {
+  label 'myagent'
+}
             steps{
                 sh 'mvn package'
                 

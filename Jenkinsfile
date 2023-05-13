@@ -20,6 +20,18 @@ pipeline {
         }
         
         
+        stage("Echo Done") {
+            agent {
+  label 'agent2'
+}
+            steps{
+                sh 'echo "WORK DONE"'
+                
+            }
+        }
+        
+        
+        
        
         
         
